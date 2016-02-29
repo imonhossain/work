@@ -1,9 +1,19 @@
 $(document).ready(function(){
-	 $(".navbar-nav li a").click(function(){
+	//active nave menu
+			$(".navbar-nav li a").click(function(){
 				  $(".navbar-nav li a").removeClass("active");
 				  $(this).addClass("active");
 				 
 			   }); 
+			   
+			   //active portfolio menu
+			$(".portfolio_filter ul li a:hover").click(function(){
+				  $(".navbar-nav li a").removeClass("active");
+				  $(this).addClass("active");
+				 
+			   });  
+			   
+			   $(".nav-active").css({"color":"#fff", "background":"#212121"});
 	 $(".portfolio_contents ul li ").eq(3).css({"margin-left":"338px"});
 	 $(".portfolio_contents ul li ").eq(8).css({"margin-left":"338px"});
 	$(".single-icon").eq(0).mouseenter(function(){

@@ -3,7 +3,6 @@
 .odofo{font-family: 'Exo 2', sans-serif;font-family: 'Open Sans', sans-serif;}
 body{
 	text-align:center;
-	margin-bottom:200px;
 }
 *{
 	margin:0;
@@ -75,6 +74,9 @@ p{
   font-weight: 800;
   padding: 24px 13px 24px;
   text-transform: uppercase;
+  transition-property:background;
+  transition-property:border;
+  transition-duration:1.5s;
 }
 .nav-menu-top ul#nav li a.active{
 	border-color:#000;
@@ -156,7 +158,7 @@ display:block;
 
 /*Start Feature Area*/
 .feature-area{
-	padding-bottom:150px;
+	padding:150px 0;
 }
 .single-feature-icon{
 	background: #cd2929 none repeat scroll 0 0;
@@ -291,6 +293,7 @@ display: inline-block;
 text-transform: uppercase;
 font-weight:600;
 float:left;
+
 }
 
 .portfolio_filter ul li:last-child{
@@ -300,7 +303,16 @@ float:left;
 	color:#fff;
 	background:#212121;
 	display:inline-block;
+	-webkit-transition:background-color 1s ease;
+	-moz-transition:background-color 1s ease;
+	-o-transition:background-color 1s ease;
+	transition:background-color 1s ease;
+	/* -webkit-transition:color 1s ease;
+	-moz-transition:color 1s ease;
+	-o-transition:color 1s ease;
+	transition:color 1s ease; */
 }
+
 .portfolio_filter ul li a:visited{
 	color:#fff;
 	background:#212121;
@@ -363,20 +375,7 @@ float:left;
 .testimonial-area p{
 	font-size:20px;
 }
-blockquote
-{
-    clear: both;
-    font-style: italic;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding: 10px 10px 0 50px;
-    position: relative;
-    quotes: none;
-    background: url(https://dl.dropbox.com/u/96099766/RotatingTestimonial/open-quote.png) 0 0 no-repeat;
-    border: 0px;
-    font-size: 120%;
-    line-height: 200%;
-}
+
 /*Skill Area*/
 
 .skill-area {
@@ -650,6 +649,7 @@ opacity:.7;
 border:1px solid #000;
 background: #1c1b1b none repeat scroll 0 0;
 cursor:pointer;
+ transition:0.5s;
 	}
 .member-icon .rotate45 .mb-sol-icon{
 	border:1px solid #000;
@@ -658,6 +658,8 @@ background: #1c1b1b none repeat scroll 0 0;
 	  width: 50px;
 transform: rotate(45deg);cursor:pointer;
 opacity:.7;
+	
+  transition:0.5s;
 	}
 .member-icon .rotate3 {
   bottom: 0;
@@ -673,6 +675,7 @@ background: #1c1b1b none repeat scroll 0 0;
 	 height: 50px;
 	  width: 50px;
 opacity:.7;cursor:pointer;
+ transition:0.5s;
 	}
 	.member-icon .rotate4 {
   bottom: 29%;
@@ -688,6 +691,7 @@ background: #1c1b1b none repeat scroll 0 0;
 	 height: 50px;
 	  width: 50px;
 opacity:.7;cursor:pointer;
+ transition:0.5s;
 	}
 .member-icon .rotate5 {
   bottom: 57%;
@@ -704,6 +708,7 @@ background: #1c1b1b none repeat scroll 0 0;
 	  width: 50px;
 	opacity:.7;
 	cursor:pointer;
+	 transition:0.5s;
 	}
 .member-icon .rotate45 .me-facebook {
   margin-left: -2px;
@@ -833,7 +838,7 @@ color: #fff;
     /* padding-left: 93px; */
     padding-top: 16px;
     text-align: center;
-    margin-left: 126px;
+    margin-left: 140px;
 
 
 }
@@ -878,7 +883,7 @@ color: #fff;
   width: 219%;
 }
 .main-contact .from-send {
-  background: red none repeat scroll 0 0;
+  background: #772525 none repeat scroll 0 0;
   height: 150px;
   position: absolute;
   right: 0;
@@ -898,7 +903,7 @@ color: #fff;
 	font-weight:800;
 }
 .main-contact .from-address {
-  background: red none repeat scroll 0 0;
+  background: #cd2929 none repeat scroll 0 0;
   bottom: 0;
   cursor: pointer;
   height: 220px;
