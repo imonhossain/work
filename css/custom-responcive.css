@@ -44,6 +44,17 @@
 	padding-bottom:70px;
 	
 }
+.clients-area .container .row{
+	margin-top:20px;
+}
+.clients-area .container .row .col-sm-6{
+	padding:20px 0;
+}
+.single-icon {
+  margin: 15px;
+}
+
+
  }
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
@@ -59,7 +70,24 @@
 .feedback-area{
 	padding-top:50px;
 }
+.icon-center{
+	width:310px;
+	margin:auto;
+}
+.single-icon {
+  margin: 15px 25px;
+}
+.clients-area .container .row{
+	margin-top:20px;
+}
+.clients-area .container .row .col-sm-6{
+	padding:20px 0;
+}
+
 }
  
 /* Landscape phones and down */
-@media (max-width: 480px) { }
+@media (max-width: 480px) {
+
+
+	}

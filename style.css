@@ -56,6 +56,7 @@ p{
 	border:none;
 	background:transparent;
 }
+
 /**Start Header Area**/
 .header-area{
 	
@@ -72,7 +73,7 @@ p{
   font-family: "Exo 2",sans-serif;
   font-size: 20px;
   font-weight: 800;
-  padding: 24px 13px 24px;
+  padding: 24px 11px 24px;
   text-transform: uppercase;
   transition-property:background;
   transition-property:border;
@@ -120,11 +121,12 @@ transform: rotate(-45deg);
 width: 490px;
 
 }
-.slider-bottom{
-	background: #cd2929 none repeat scroll 0 0;
-height: 70px;
-margin: -35px auto;
-width: 70px;
+.slider-bottom {
+  background: #cd2929 none repeat scroll 0 0;
+  height: 70px;
+  margin: -35px auto;
+  transition: all 0.5s ease 0s;
+  width: 70px;
 }
 .sl-title-btn{
 	background: #ffffff none repeat scroll 0 0;
@@ -195,7 +197,7 @@ overflow:hidden;
   left: -14%;
   position: absolute;
   top: 5px;
-  
+  transition: all 0.5s ease 0s;
 }
 .sing-a-cover{
 	width:65px;
@@ -273,6 +275,10 @@ z-index:9
 .portfolio_area {padding-top: 160px;padding-bottom: 100px;}
 .portfolio_filter {
 	padding-bottom:80px;
+}
+.portfolio{
+	padding-left:50px;
+	width:100%;
 }
 .portfolio_filter ul {
   border: 1px solid #212121;
@@ -580,6 +586,9 @@ width: 360px;
   transform: rotate(-45deg);
 }
 .single_portfolios .zoom-image a{color:#fff}
+.zin6{
+	z-index:6;
+}
 /**twitter feed area**/
 .twitter-feed-area {
   background: rgba(0, 0, 0, 0) url("images/twitter-feed-bg.jpg") no-repeat scroll center center / cover ;
@@ -593,7 +602,7 @@ width: 360px;
 
 /*Team area*/
 .team-area{
-	padding:150px 0
+	padding:100px 0
 }
 .member-image.rotate45 {
   height: 186px;
@@ -830,6 +839,7 @@ color: #fff;
 .form_contact input:focus{
 	border-color:none;
 }
+
 .form_contact input.cnt-name {
       background: transparent none repeat scroll 0 0;
     border-bottom: 1px solid #464646;
@@ -924,6 +934,10 @@ line-height: 9px;
 	font-weight:600;
 	margin-top:0;
 }
+.error_name{
+	color:red;
+	z-index:6;
+}
 /*Footer area*/
 .footer-area{
 	background:#212121;
@@ -943,4 +957,18 @@ line-height: 9px;
 }
 .icon-center2 .ml120{
 	margin-left:120px;
+}
+.up-button{
+	margin:auto;
+}
+.slider-bottom-ft {
+  background: #cd2929 none repeat scroll 0 0;
+  height: 55px;
+  transition: all 0.5s ease 0s;
+  width: 55px;
+}
+.single-icon-mid{
+	border:0;
+	 height: 55px;
+  width: 55px;
 }
