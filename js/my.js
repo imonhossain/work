@@ -1,3 +1,11 @@
+jQuery(window).bind('scroll', function (){
+  if (jQuery(window).scrollTop() > 900){
+    jQuery('#sticky_navigation').addClass('navbar-fixed-top');
+  } else {
+    jQuery('#sticky_navigation').removeClass('navbar-fixed-top');
+  }
+});
+
 $(document).ready(function(){
 	//active nave menu
 			$(".navbar-nav li a").click(function(){
@@ -13,9 +21,9 @@ $(document).ready(function(){
 				 
 			   });  
 			   $(".nav-active").css({"color":"#fff", "background":"#212121"});
-	  $(".portfolio_contents ul li ").eq(3).css({"margin-left":"338px"});
+	  /* $(".portfolio_contents ul li ").eq(3).css({"margin-left":"338px"});
 	 $(".portfolio_contents ul li ").eq(8).css({"margin-left":"338px"}); 
-	 $(".portfolio_contents ul li ").css({"overflow":"hidden"});
+	 $(".portfolio_contents ul li ").css({"overflow":"hidden"}); */
 	 
 	 $(".icon-center .single-icon").hover(function(){
 		$(this).find(".single1").stop().fadeIn(500);
@@ -95,10 +103,15 @@ $(document).ready(function(){
 	);
 	
 	
-	 /* $(".portfolio_filter ul li").click(function(){
-		$(this).css({"background":"#212121", "color":"#fff"});
-	
-});  */
+
+		$(".portfolio_contents ul li .single_portfolio .over-content").css({"opacity":"0.0"});
+	$(".single_portfolio").hover(function(){
+		/* $(".team-mem-icon").css({"color":"red"}); */
+		$(this).find(".over-content").stop().animate({"opacity":"1"});
+},
+	function(){
+		$(this).find(".over-content").stop().animate({"opacity":"0.0"});
+	});
 
 			$('.bxslider').bxSlider({
                  mode: 'horizontal',
@@ -135,6 +148,8 @@ $(document).ready(function(){
 		}
 	})
 }); */	 
+
+	$("a[data-gal^='prettyPhoto'").prettyPhoto({hook: 'data-gal'});
 			   
 }); 
 

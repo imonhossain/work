@@ -53,8 +53,19 @@
 .single-icon {
   margin: 15px;
 }
+p{
+	font-size:14px;
+}
+.portfolio_contents ul li {
+  width: 33%;
+}
+.portfolio_filter {
+  padding-bottom: 40px;
+}
 
-
+.icon-center {
+  width: 40%;
+}
  }
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
@@ -83,11 +94,27 @@
 .clients-area .container .row .col-sm-6{
 	padding:20px 0;
 }
+.portfolio_contents ul li {
+  width: 50%;
+}
+p{
+	font-size:16px;
+}
+.icon-center {
+  width: 40%;
+}
 
 }
- 
+ .portfolio_filter {
+  padding-bottom: 30px;
+}
 /* Landscape phones and down */
 @media (max-width: 480px) {
-
+.portfolio_filter {
+  padding-bottom: 20px;
+}
+.icon-center {
+  width: 40%;
+}
 
 	}
